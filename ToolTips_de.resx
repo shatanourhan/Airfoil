@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAutoSearch" xml:space="preserve">
+    <value>Automatisch nach gut passenden Kontrollpunkten für beide Kurven suchen.
+Es werden rekursiv 3 andere Punkte pro Kontrollpunkt ausprobiert.
+Der Suchradius ist Error / 100 (nur vertikal).
+Wenn da nichts besseres dabei war, werden 4 andere Punkte pro Kontrollpunkt probiert. Und so weiter.
+Wenn die Verbesserung durch andere Positionen der Kontrollpunkte unter 10% liegt, wird der Grad der Kurve um 1 erhöht.
+Dann wieder suchen.
+So lange, bis der Error unter 0.075 liegt.
+Die Suche kann mit der Stopp-Taste unterbrochen werden.</value>
+  </data>
+  <data name="btnAxisAuto" xml:space="preserve">
+    <value>Passt den Zoom an die dargestellten Daten an.</value>
+  </data>
+  <data name="btnDecreaseOrderBottom" xml:space="preserve">
+    <value>Den Grad der unteren Bezierkurve verringern, während die Form beibehalten wird.</value>
+  </data>
+  <data name="btnDecreaseOrderTop" xml:space="preserve">
+    <value>Den Grad der oberen Bezierkurve verringern, während die Form beibehalten wird.</value>
+  </data>
+  <data name="btnDefault" xml:space="preserve">
+    <value>Die Standard Kontrollpunkte laden.</value>
+  </data>
+  <data name="btnIncreaseOrderBottom" xml:space="preserve">
+    <value>Den Grad der unteren Bezierkurve erhöhen, während die Form beibehalten wird.</value>
+  </data>
+  <data name="btnIncreaseOrderTop" xml:space="preserve">
+    <value>Den Grad der oberen Bezierkurve erhöhen, während die Form beibehalten wird.</value>
+  </data>
+  <data name="btnLoadBez" xml:space="preserve">
+    <value>Die Kontrollpunkte aus einer .bez Datei laden.</value>
+  </data>
+  <data name="btnLoadBezDat" xml:space="preserve">
+    <value>Die Kontrollpunkte aus einer .bez.dat Datei laden.</value>
+  </data>
+  <data name="btnLoadDat" xml:space="preserve">
+    <value>Ein Referenzprofil aus einer .dat Datei laden. Rechtsklick zum entfernen.</value>
+  </data>
+  <data name="btnSaveBez" xml:space="preserve">
+    <value>Speichern der aktuellen Kontrollpunkte als .bez-Datei.
+Das Format unterscheidet sich von normalen .dat-Dateien.
+Die Kontrollpunkte am Nasen- und Endleiste müssen für die oberen und unteren Kurven nicht identisch sein.
+Dies ermöglicht die Definition anderer Formen durch Bezierkurven, zum Beispiel den Flügelgrundriss.
+Derzeit nicht von anderer Software unterstützt, aber theoretisch ein besseres Dateiformat.
+Beispiel Dateiformat:
+
+Airfoil Name
+Top Start
+0.00000000 0.00000000
+0.00000000 0.15000000
+0.50000000 0.15000000
+1.00000000 0.00000000
+Top End
+Bottom Start
+0.00000000 0.00000000
+0.00000000 -0.10000000
+0.50000000 -0.10000000
+1.00000000 0.00000000
+Bottom End</value>
+  </data>
+  <data name="btnSaveBezDat" xml:space="preserve">
+    <value>Speichern der aktuellen Kontrollpunkte als .bez.dat Datei.
+Das Format ist identisch mit normalen .dat Dateien.
+Erlaubt das einfache Importieren der Kontrollpunkte in die meisten anderen Programme.
+Beispiel Dateiformat:
+
+Airfoil Name
+1.00000000 0.00000000
+0.50000000 0.15000000
+0.00000000 0.15000000
+0.00000000 0.00000000
+0.00000000 -0.10000000
+0.50000000 -0.10000000
+1.00000000 0.00000000</value>
+  </data>
+  <data name="btnSaveDat" xml:space="preserve">
+    <value>Die aktuellen Kurven als .dat Datei speichern.</value>
+  </data>
+  <data name="btnSearchBottom" xml:space="preserve">
+    <value>Nach besseren Kontrollpunkten für die untere Kurve suchen.
+
+Rechtsklick, um eine einzelne Suche durchzuführen.</value>
+  </data>
+  <data name="btnSearchTop" xml:space="preserve">
+    <value>Nach besseren Kontrollpunkten für die obere Kurve suchen.
+
+Rechtsklick, um eine einzelne Suche durchzuführen.</value>
+  </data>
+  <data name="btnStartPSOBottom" xml:space="preserve">
+    <value>Eine Partikel-Schwarm-Optimierung für die untere Kurve starten.</value>
+  </data>
+  <data name="btnStartPSOTop" xml:space="preserve">
+    <value>Eine Partikel-Schwarm-Optimierung für die obere Kurve starten.</value>
+  </data>
+  <data name="btnStopSearch" xml:space="preserve">
+    <value>Die aktuelle Suche abbrechen.</value>
+  </data>
+  <data name="chkShowBottom" xml:space="preserve">
+    <value>Die untere Kurve anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowCamber" xml:space="preserve">
+    <value>Die Wölbungslinie anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowControlBottom" xml:space="preserve">
+    <value>Die Kontrollpunkte für die untere Kurve anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowControlTop" xml:space="preserve">
+    <value>Die Kontrollpunkte für die obere Kurve anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowRadius" xml:space="preserve">
+    <value>Den Radius an der Vorderkante anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowReferenceBottom" xml:space="preserve">
+    <value>Die Unterseite des Referenzprofils anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowReferenceTop" xml:space="preserve">
+    <value>Die Oberseite des Referenzprofils anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowThickness" xml:space="preserve">
+    <value>Die Dickenverteilung anzeigen oder ausblenden.</value>
+  </data>
+  <data name="chkShowTop" xml:space="preserve">
+    <value>Die obere Kurve anzeigen oder ausblenden.</value>
+  </data>
+  <data name="txtCamberPosition" xml:space="preserve">
+    <value>Die Position festlegen, an der die Wölbungslinie berechnet wird.</value>
+  </data>
+  <data name="txtCamberStepSize" xml:space="preserve">
+    <value>Die Schrittweite festlegen, mit der die Wölbungslinie berechnet wird.</value>
+  </data>
+  <data name="txtChord" xml:space="preserve">
+    <value>Legt die Profiltiefe fest, mit der die Koordinaten exportiert werden.</value>
+  </data>
+  <data name="txtNumOfPointBottom" xml:space="preserve">
+    <value>Die Anzahl der Punkte auf der unteren Bezierkurve festlegen.</value>
+  </data>
+  <data name="txtNumOfPointsTop" xml:space="preserve">
+    <value>Die Anzahl der Punkte auf der oberen Bezierkurve festlegen.</value>
+  </data>
+  <data name="txtThicknessStepSize" xml:space="preserve">
+    <value>Den Schrittweite festlegen, mit der die Dickenlinie berechnet wird.</value>
+  </data>
+</root>
